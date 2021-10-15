@@ -228,7 +228,70 @@ ul {
 #nav .subnav li:hover {
   background-color: #eee;
 }
+/* place */
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
+.col-third {
+    width: 30%;
+}
+.col-full {
+    width: 100%;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+.place-body{
+    background-color: rgb(209, 229, 243);
+    font-size: 15px;
+    padding: 15px;
+}
+.place-list{
+    margin-top: 16px;
+    margin-bottom: 48px;
+
+}
+.place-item{
+    float: left;
+    width: 30%;
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-heading{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-buy-btn {
+    color: #fff;
+    background-color: rgb(141, 133, 255);
+    text-decoration: none;
+    padding: 5px 25px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+
+.place-buy-btn:hover {
+    background-color: rgb(130, 243, 196);
+}
+@media (max-width: 740px) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+}
+/* Search Button */
 
 /* BREADCRUMB  */
 
