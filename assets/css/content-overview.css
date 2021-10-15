@@ -1,0 +1,71 @@
+#asm-info {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#asm-info tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#asm-info tr:hover {
+    background-color: #ddd;
+}
+
+#asm-info td {
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    padding: 8px;
+}
+
+.sub-asm {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.sub-asm th,td {
+    border-bottom: 1px solid #ccc;
+}
+
+.sub-asm a {
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    line-height: 40px;
+    color: #000;
+    background-color: #009688;
+    box-sizing: border-box;
+    padding: 6px;
+    box-shadow: 0 1px 0 rgb(0,0,0,0.1);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.content-overview-btn {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.content-overview-btn .btn{
+    min-width: 50px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: none;
+    box-shadow: 0 1px 0 rgb( 0, 0, 0, .1);
+    border-radius: 5px;
+    background-color: #009688;
+    font-weight: bold;
+    font-family: Nunito;
+}
+
+.content-overview-btn .btn:hover{
+    cursor: pointer;
+}
+
+.content-overview-btn .btn:active{
+    position: relative;
+    top: 1px;
+}
