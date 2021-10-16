@@ -8,7 +8,7 @@
   min-height: 100%;
 }
 
-button::-moz-focus-inner {
+#calendari table button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -18,14 +18,14 @@ button::-moz-focus-inner {
   position: relative;
   overflow: hidden;
   height: 310px;
-  width: 350px;
+  width: 100%;
   font-size: 14px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
 }
-table {
+#calendari table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 350px;
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   position: absolute;
@@ -35,38 +35,38 @@ table {
   transition: all 0.3s ease;
   border-radius: 5px;
 }
-table.actiu {
+#calendari table.actiu {
   transform: translateX(0px) top;
 }
-table.inactiu {
+#calendari table.inactiu {
   transition: all 0.3s 0.01s ease;
 }
-table.amagat-esquerra {
+#calendari table.amagat-esquerra {
   transform: translateX(-299px);
 }
-table.amagat-dreta {
+#calendari table.amagat-dreta {
   transform: translateX(300px);
 }
-td,
+#calendari table td,
 th {
   text-align: center;
   background-color: #fff;
 }
-th {
+#calendari table th {
   padding: 10px;
 }
-tr:first-child th {
+#calendari table tr:first-child th {
   font-size: 20px;
   font-weight: bold;
   border-left: none;
   border-top: none;
 }
-td:last-child,
-th:last-child {
+#calendari table td:last-child,
+#calendari table th:last-child {
   border-right: none;
 }
 
-th {
+#calendari table th {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #009688;
@@ -74,21 +74,21 @@ th {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
   font-weight: normal;
 }
-th .any {
+#calendari table th .any {
   font-size: 12px;
   font-weight: normal;
   display: block;
   text-shadow: none;
   color: rgba(0, 0, 0, 0.4);
 }
-tr:nth-child(2) th {
+#calendari table tr:nth-child(2) th {
   padding: 5px;
 }
-td {
+#calendari table td {
   padding: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-td > span {
+#calendari table td > span {
   color: #000;
   padding: 10px;
   display: block;
@@ -96,14 +96,14 @@ td > span {
   transition: border 0.3s ease;
 }
 
-td:nth-child(even) > span {
+#calendari table td:nth-child(even) > span {
   background-color: rgba(0, 0, 0, 0.02);
 }
 td:last-child > span,
 td:nth-child(6) > span {
   color: #000;
 }
-td.avui > span {
+#calendari table td.avui > span {
   font-weight: bold;
   background-color: #fc951e;
   color: #fff;
@@ -112,12 +112,12 @@ td.avui > span {
 td.fora > span {
   opacity: 0.2;
 }
-td > span:hover {
+#calendari table td > span:hover {
   background: #ffa742;
   color: #fff;
 }
-.boto-next,
-.boto-prev {
+#calendari table .boto-next,
+#calendari table .boto-prev {
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
   font-family: inherit;
@@ -134,35 +134,36 @@ td > span:hover {
   position: absolute;
   top: 15px;
 }
-.boto-next {
+#calendari table .boto-next {
   right: 10px;
   padding-left: 13px;
 }
-.boto-prev {
+#calendari table .boto-prev {
   left: 10px;
   padding-right: 13px;
 }
-.boto-next:hover,
+#calendari table .boto-next:hover,
 .boto-prev:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-button:hover {
+#calendari table button:hover {
   cursor: pointer;
 }
-button:focus {
+#calendari table button:focus {
   outline: none;
 }
 
-footer {
+#calendari table footer {
   text-align: center;
   color: #ddd;
+  background-color: #009688;
   font-weight: normal;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
   font-size: 0.8em;
   padding: 20px;
 }
 
-footer a,
+#calendari table footer a,
 footer a:link {
   color: #fff;
   text-decoration: none;

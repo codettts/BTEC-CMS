@@ -33,7 +33,6 @@ Number.prototype.pad = function (num) {
 
 function calendari(widget, data) {
   var original = widget.getElementsByClassName("actiu")[0];
-
   if (typeof original === "undefined") {
     original = document.createElement("table");
     original.setAttribute(

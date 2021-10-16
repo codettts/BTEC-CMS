@@ -7,6 +7,10 @@ html {
   font-family: Nunito;
 }
 
+.clear {
+  height: 40px;
+}
+
 ul {
   list-style-type: none;
 }
