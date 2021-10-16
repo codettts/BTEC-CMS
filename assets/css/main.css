@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: Nunito;
+  font-family: Nunito !important;
 }
 
 .clear {
@@ -519,12 +519,57 @@ ul.breadcrumb li a:hover {
   background-color: #fd7522;
   box-sizing: border-box;
   padding: 20px 15%;
-  display: flex;
-  justify-content: center;
   color: #fff;
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.footer i {
+  min-width: 20px;
+}
+
 #footer .footer-info {
-  width: 25%;
-  min-height: 250px;
+  width: 50%;
+}
+
+#footer .footer a {
+  color: #fff;
+  line-height: 20px;
+}
+
+#footer .footer-info p {
+  box-sizing: border-box;
+  padding: 4px 0;
+}
+
+.footer-about {
+  width: 50%;
+}
+
+.footer-about div {
+  display: inline-block;
+  width: 45%;
+  box-sizing: border-box;
+  padding-left: 16px;
+}
+
+.footer-link {
+  text-align: center;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 4px 0;
+}
+
+.footer-link a {
+  color: #fff;
+  font-size: 30px;
+  padding: 8px;
 }
