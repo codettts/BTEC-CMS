@@ -15,13 +15,14 @@
 	width: 100%;
 	opacity: 0;
 	transition: opacity 3s linear;
+    z-index: -1;
 }
 
 .slider-wrapper > .slide:first-child {
 	opacity: 1;
 }
 
-.containers-slides {
+.container-slides {
     position: relative;
-    min-height: 950px;
+    height: 900px;
 }
