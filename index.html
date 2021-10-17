@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/search-nav.css" />
     <link rel="stylesheet" href="assets/css/upcoming-events.css" />
     <link rel="stylesheet" href="assets/css/calendar.css" />
+    <link rel="stylesheet" href="assets/css/update-profile.css" />
+    <link rel="stylesheet" href="assets/css/upcoming-event.css" />
+    <link rel="stylesheet" href="assets/css/slideshow.css">
     <link
       rel="stylesheet"
       href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
@@ -40,7 +43,7 @@
               <i class="fas fa-chevron-down btn-user-element"></i>
             </button>
             <div id="drop" class="header-sub-nav">
-              <a href="update-profile.html"
+              <a href=""
                 ><i class="fas fa-user-cog"></i> <span>Settings</span>
               </a>
               <a href=""
@@ -81,163 +84,42 @@
         </div>
       </div>
       <!-- End Navigation -->
+      <div class="container-slides">
+        <div class="slider" id="main-slider"><!-- outermost container element -->
+            <div class="slider-wrapper"><!-- innermost wrapper element -->
+                <img src="assets/images/socialbg.png" alt="First" class="slide" /><!-- slides -->
+                <img src="assets/images/BLOG-technology-in-higher-education@1X.jpg" alt="Second" class="slide" />
+            </div>
+        </div>	
+      </div>
       <div id="content">
-        <div id="breadcrumbs">
+        <!-- <div id="breadcrumbs">
           <ul class="breadcrumb">
             <li><a href="">Home</a></li>
-            <li><a href="manage-class.html">My Classes</a></li>
-            <li>Class 1</li>
+            <li>Update Profile</li>
           </ul>
-        </div>
-        <div id="main-content">
-          <div class="right-content">
-            <div class="nav-tab">
-              <button
-                class="btn tablink first-tab"
-                onclick="openTab(event,'Class-Overview')"
-              >
-                Class Overview
-              </button>
-              <button
-                class="btn tablink"
-                onclick="openTab(event, 'Create-Code')"
-              >
-                Create Code
-              </button>
-              <button
-                class="btn tablink"
-                onclick="openTab(event, 'Create-Assignment')"
-              >
-                Create Assignment
-              </button>
-            </div>
-            <div id="Class-Overview" class="tab-content class-overview">
-              <div class="topic">
-                <h1 class="topic-title">Topic 1</h1>
-                <div class="topic-content">
-                  <ul>
-                    <li>
-                      <a href=""><i class="fas fa-passport"></i> Document</a>
-                    </li>
-                    <li>
-                      <a href="content-overview.html"
-                        ><i class="fas fa-file-alt"></i> Asm 1</a
-                      >
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-file-alt"></i> Asm 1 2nd</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="topic">
-                <h1 class="topic-title">Topic 2</h1>
-                <div class="topic-content">
-                  <ul>
-                    <li>
-                      <a href=""><i class="fas fa-passport"></i> Document</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-file-alt"></i> Asm 2</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-file-alt"></i> Asm 2 2nd</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="topic">
-                <h1 class="topic-title">Topic 3</h1>
-                <div class="topic-content">
-                  <ul>
-                    <li>
-                      <a href=""><i class="fas fa-passport"></i> Document</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-file-alt"></i> Asm 3</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-file-alt"></i> Asm 3 2nd</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div id="Create-Code" class="tab-content" style="display: none">
-              <form action="">
-                <h4>Code for Class</h4>
-                <input
-                  type="password"
-                  id="codeInput"
-                  placeholder=""
-                  class="input-info"
-                  required
-                /><br />
-                <input type="checkbox" name="" id="" onclick="showpassFunc()" />
-                Show Password
-              </form>
-              <button type="submit" class="btn btn-create-code">Update</button>
-            </div>
-            <div
-              id="Create-Assignment"
-              class="tab-content"
-              style="display: none"
-            >
-              <form action="">
-                <h4>Assignment Name</h4>
-                <input
-                  type="text"
-                  placeholder="Name..."
-                  required
-                  class="input-info"
-                /><br />
-                <h4>Due</h4>
-                <input
-                  type="date"
-                  class="input-info"
-                  required
-                  placeholder=""
-                /><br />
-                <h4>Submitsion Type</h4>
-                <select name="submitsion-type" id="" class="input-info">
-                  <option value=".doc">.doc</option>
-                  <option value=".pdf">.pdf</option>
-                  <option value=".zip">.zip</option>
-                </select>
-              </form>
-              <button type="submit" class="btn btn-create-asm">
-                Create Assignment
-              </button>
-            </div>
-          </div>
-          <div id="sidebar">
-            <div id="calendar">
-              <div class="calendar-title">
-                <i class="fas fa-calendar-alt"></i><span>Calendar</span>
-              </div>
-              <div class="wrapper">
-                <div id="calendari"></div>
-              </div>
-            </div>
-            <div class="events">
-              <div class="events-title">
-                <i class="fas fa-calendar-check"></i
-                ><span>Upcoming Events</span>
-              </div>
-              <div>
-                <div class="cal" ng-app="calApp" ng-controller="calCtrl"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> -->
+        <div class="clear"></div>
       </div>
       <div id="footer">
         <div class="footer-wrap">
           <div class="footer footer-info">
             <h1><i class="fas fa-school"></i> ABC University</h1>
-            <p><i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi</p>
-            <p><a href="mailto:thanhbhaf18@gmail.com"><i class="fas fa-envelope-open-text"></i> Email : thanhbhaf18@gmail.com</a></p>
-            <p><a href="tel:0366917178"><i class="fas fa-phone"></i> Hotline : 0123-456-789</a></p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            </p>
+            <p>
+              <a href="mailto:thanhbhaf18@gmail.com"
+                ><i class="fas fa-envelope-open-text"></i> Email :
+                thanhbhaf18@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:0366917178"
+                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+              >
+            </p>
           </div>
           <div class="footer footer-about">
             <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
@@ -254,11 +136,14 @@
           </div>
         </div>
         <div class="footer-link">
-          <a href="https://www.facebook.com/fptbtec/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.facebook.com/fptbtec/"
+            ><i class="fab fa-facebook"></i
+          ></a>
           <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
           <a href=""><i class="fab fa-instagram"></i></a>
           <a href=""><i class="fab fa-twitter"></i></a>
         </div>
+      </div>
     </div>
     <div></div>
     <!-- Calendar JS -->
@@ -311,5 +196,8 @@
       }
     </script>
     <script src="assets/js/drop-user.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <script src="assets/js/textarea-editor.js"></script>
+    <script src="assets/js/slideshow.js"></script>
   </body>
 </html>

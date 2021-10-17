@@ -336,6 +336,7 @@ ul.breadcrumb li a:hover {
 #content {
   box-sizing: border-box;
   margin: 0 15% 150px;
+  min-height: 950px;
 }
 
 #main-content {
@@ -545,6 +546,10 @@ ul.breadcrumb li a:hover {
   line-height: 20px;
 }
 
+.footer a:hover {
+  color: #000;
+}
+
 #footer .footer-info p {
   box-sizing: border-box;
   padding: 4px 0;
@@ -570,6 +575,11 @@ ul.breadcrumb li a:hover {
 
 .footer-link a {
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   padding: 8px;
+}
+
+.footer-link a:hover {
+  color: #000;
+  opacity: 0.5;
 }

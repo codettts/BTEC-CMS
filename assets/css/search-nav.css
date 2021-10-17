@@ -7,6 +7,7 @@
   white-space: nowrap;
   /* position: relative; */
   float: right;
+  margin-top: 4px;
 }
 
 .search-nav input#search {
