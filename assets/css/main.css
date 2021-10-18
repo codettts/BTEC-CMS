@@ -46,7 +46,8 @@ a {
 }
 
 #top .img-logo {
-  height: 80px;
+  height: 100px;
+  cursor: pointer;
 }
 
 .header-icon {
@@ -166,7 +167,7 @@ a {
   font-size: 9px;
 }
 #nav .subnav {
-  min-width: 160px;
+  min-width: 180px;
   display: none;
   top: 100%;
   padding: 8px 0;
@@ -198,7 +199,7 @@ ul {
 }
 
 #navigation {
-  background-color: #6c7383;
+  background-color: #fd7522;
   padding: 0 15%;
   z-index: 1;
 }
@@ -341,7 +342,7 @@ ul.breadcrumb li a:hover {
 
 #main-content .right-content {
   width: 75%;
-  min-height: 600px;
+  /* min-height: 600px; */
   border: 2px solid grey;
   border-radius: 5px;
   box-sizing: border-box;
@@ -496,6 +497,7 @@ ul.breadcrumb li a:hover {
 #sidebar {
   box-sizing: border-box;
   padding: 10px;
+  max-width: 25%;
 }
 
 /* Upcoming Events */

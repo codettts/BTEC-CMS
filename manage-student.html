@@ -69,10 +69,10 @@
 
   <body>
     <!-- header -->
-    <div id="containers">
+    <div id="container">
       <div id="top">
         <div class="header-logo">
-          <img class="img-logo" src="assets/images/logo.png" alt="" />
+          <a href="index.html"><img class="img-logo" src="assets/images/logo.png" alt="" /></a>
         </div>
         <div class="header-user">
           <div class="notifi">
@@ -89,7 +89,7 @@
               <i class="fas fa-chevron-down btn-user-element"></i>
             </button>
             <div id="drop" class="header-sub-nav">
-              <a href=""
+              <a href="update-profile.html"
                 ><i class="fas fa-user-cog"></i> <span>Settings</span></a
               >
               <a href=""
@@ -102,18 +102,19 @@
       <!-- Start Main Navigation -->
       <div id="navigation">
         <ul id="nav">
-          <li><a href="">Home</a></li>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
           <li>
             <a href="#">
-              Class
+              <i class="fas fa-house-user"></i> 
+              My Class
               <i class="fas fa-angle-down"></i>
             </a>
             <ul class="subnav">
-              <li><a href="manage-class.html">My Class</a></li>
-              <li><a href="manage-student.html">Manage Student</a></li>
+              <li><a href="manage-class.html"><i class="fas fa-graduation-cap"></i> Manage Class</a></li>
+              <li><a href="manage-student.html"><i class="fas fa-user-graduate"></i> Manage Student</a></li>
             </ul>
           </li>
-          <li><a href="#">Events</a></li>
+          <li><a href="#"><i class="fas fa-calendar-day"></i> Event</a></li>
         </ul>
         <div class="search-nav">
           <form class="navbar-form" action="">
@@ -676,12 +677,47 @@
 
     <!-- footer -->
     <div id="footer">
-      <div class="footer-info">
-        <div class="heading">Footer info 1</div>
+      <div class="footer-wrap">
+        <div class="footer footer-info">
+          <h1><i class="fas fa-school"></i> ABC University</h1>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+            II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+          </p>
+          <p>
+            <a href="mailto:thanhbhaf18@gmail.com"
+              ><i class="fas fa-envelope-open-text"></i> Email :
+              thanhbhaf18@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="tel:0366917178"
+              ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+            >
+          </p>
+        </div>
+        <div class="footer footer-about">
+          <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
+          <div class="right">
+            <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+          </div>
+          <div class="left">
+            <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+          </div>
+        </div>
       </div>
-      <div class="footer-info">Footer info 2</div>
-      <div class="footer-info">Footer info 3</div>
-      <div class="footer-info">Footer info 4</div>
+      <div class="footer-link">
+        <a href="https://www.facebook.com/fptbtec/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
   </body>
 </html>

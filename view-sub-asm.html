@@ -7,11 +7,11 @@
     <title>Btec Cms</title>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/upcoming-events.css" />
-    <link rel="stylesheet" href="assets/css/search-nav.css">
+    <link rel="stylesheet" href="assets/css/search-nav.css" />
     <!-- <link rel="stylesheet" href="assets/css/calendar.css" /> -->
     <link rel="stylesheet" href="assets/css/content-overview.css" />
     <link rel="stylesheet" href="assets/css/sidebar-nav-class.css" />
-    <link rel="stylesheet" href="assets/css/view-sub-asm.css">
+    <link rel="stylesheet" href="assets/css/view-sub-asm.css" />
     <link
       rel="stylesheet"
       href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
@@ -26,7 +26,9 @@
     <div id="container">
       <div id="top">
         <div class="header-logo">
-          <img class="img-logo" src="assets/images/logo.png" alt="" />
+          <a href="index.html"
+            ><img class="img-logo" src="assets/images/logo.png" alt=""
+          /></a>
         </div>
         <div class="header-user">
           <div class="notifi">
@@ -43,9 +45,9 @@
               <i class="fas fa-chevron-down btn-user-element"></i>
             </button>
             <div id="drop" class="header-sub-nav">
-              <a href=""
-                ><i class="fas fa-user-cog"></i> <span>Settings</span>
-              </a>
+              <a href="update-profile.html"
+                ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+              >
               <a href=""
                 ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
               >
@@ -56,9 +58,31 @@
       <!-- Start Navigation -->
       <div id="navigation">
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">My Classes</a></li>
-          <li><a href="">My Events</a></li>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-house-user"></i>
+              My Class
+              <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="subnav">
+              <li>
+                <a href="manage-class.html"
+                  ><i class="fas fa-graduation-cap"></i> Manage Class</a
+                >
+              </li>
+              <li>
+                <a href="manage-student.html"
+                  ><i class="fas fa-user-graduate"></i> Manage Student</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-calendar-day"></i> Event</a>
+          </li>
         </ul>
         <div class="search-nav">
           <form class="navbar-form" action="">
@@ -95,61 +119,116 @@
               </button>
             </div>
             <div id="view-sub-asm" class="tab-content content-overview">
-              <embed src="doc/Assignment1Pro.pdf" type="application/pdf" class="sub-asm">
+              <embed
+                src="doc/Assignment1Pro.pdf"
+                type="application/pdf"
+                class="sub-asm"
+              />
             </div>
           </div>
           <div id="sub-asm-grade">
-              <div class="sub-asm-grade-info">
-                  <table class="grade-info">
-                    <tr>
-                        <th>Assignment Name</th>
-                        <td>Assignment 1</td>
-                    </tr>
-                    <tr>
-                        <th>Trainee ID</th>
-                        <td>SV1</td>
-                    </tr>
-                    <tr>
-                        <th>Trainee Name</th>
-                        <td>Sieu cap vip pro</td>
-                    </tr>
-                    <tr>
-                        <th>Due</th>
-                        <td>Tomorrow</td>
-                    </tr>
-                    <tr>
-                        <th>Last modified</th>
-                        <td>Today</td>
-                    </tr>
-                    <tr>
-                        <th>Grade Status</th>
-                        <td>Not yet</td>
-                    </tr>
-                  </table>
-              </div>
-              <div class="grade-cmt">
-                  <form action="">
-                      <div class="grade">
-                        <h3>Grade</h3>
-                        <input type="number" min="1" max="100" value="00" name="sub-asm-grade" class="sub-asm-grade">
-                      </div>
-                      <div class="cmt">
-                          <h3>Comments</h3>
-                        <textarea name="sub-asm-cmt" style="resize: none" class="sub-asm-cmt" cols="30" rows="10" autofocus></textarea>
-                      </div>
-                  </form>
-                  <button type="submit" value="" class="btn btn-grade-asm">Save</button>
-              </div>
+            <div class="sub-asm-grade-info">
+              <table class="grade-info">
+                <tr>
+                  <th>Assignment Name</th>
+                  <td>Assignment 1</td>
+                </tr>
+                <tr>
+                  <th>Trainee ID</th>
+                  <td>SV1</td>
+                </tr>
+                <tr>
+                  <th>Trainee Name</th>
+                  <td>Sieu cap vip pro</td>
+                </tr>
+                <tr>
+                  <th>Due</th>
+                  <td>Tomorrow</td>
+                </tr>
+                <tr>
+                  <th>Last modified</th>
+                  <td>Today</td>
+                </tr>
+                <tr>
+                  <th>Grade Status</th>
+                  <td>Not yet</td>
+                </tr>
+              </table>
+            </div>
+            <div class="grade-cmt">
+              <form action="">
+                <div class="grade">
+                  <h3>Grade</h3>
+                  <input
+                    type="number"
+                    min="1"
+                    max="100"
+                    value="00"
+                    name="sub-asm-grade"
+                    class="sub-asm-grade"
+                  />
+                </div>
+                <div class="cmt">
+                  <h3>Comments</h3>
+                  <textarea
+                    name="sub-asm-cmt"
+                    style="resize: none"
+                    class="sub-asm-cmt"
+                    cols="30"
+                    rows="10"
+                    autofocus
+                  ></textarea>
+                </div>
+              </form>
+              <button type="submit" value="" class="btn btn-grade-asm">
+                Save
+              </button>
+            </div>
           </div>
         </div>
       </div>
       <div id="footer">
-        <div class="footer-info">
-          <div class="heading">Footer info 1</div>
+        <div class="footer-wrap">
+          <div class="footer footer-info">
+            <h1><i class="fas fa-school"></i> ABC University</h1>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            </p>
+            <p>
+              <a href="mailto:thanhbhaf18@gmail.com"
+                ><i class="fas fa-envelope-open-text"></i> Email :
+                thanhbhaf18@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:0366917178"
+                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+              >
+            </p>
+          </div>
+          <div class="footer footer-about">
+            <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
+            <div class="right">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+            <div class="left">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+          </div>
         </div>
-        <div class="footer-info">Footer info 2</div>
-        <div class="footer-info">Footer info 3</div>
-        <div class="footer-info">Footer info 4</div>
+        <div class="footer-link">
+          <a href="https://www.facebook.com/fptbtec/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
     </div>
     <div></div>

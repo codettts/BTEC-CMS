@@ -7,7 +7,7 @@
     <title>Btec Cms</title>
     <link rel="stylesheet" href="assets/css/search-nav.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/upcoming-events.css" />
+    <link rel="stylesheet" href="assets/css/upcoming-event.css" />
     <!-- <link rel="stylesheet" href="assets/css/calendar.css" /> -->
     <link rel="stylesheet" href="assets/css/content-overview.css" />
     <link rel="stylesheet" href="assets/css/sidebar-nav-class.css" />
@@ -25,7 +25,7 @@
     <div id="container">
       <div id="top">
         <div class="header-logo">
-          <img class="img-logo" src="assets/images/logo.png" alt="" />
+          <a href="index.html"><img class="img-logo" src="assets/images/logo.png" alt="" /></a>
         </div>
         <div class="header-user">
           <div class="notifi">
@@ -42,9 +42,9 @@
               <i class="fas fa-chevron-down btn-user-element"></i>
             </button>
             <div id="drop" class="header-sub-nav">
-              <a href=""
-                ><i class="fas fa-user-cog"></i> <span>Settings</span>
-              </a>
+              <a href="update-profile.html"
+                ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+              >
               <a href=""
                 ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
               >
@@ -55,9 +55,19 @@
       <!-- Start Navigation -->
       <div id="navigation">
         <ul id="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="">My Classes</a></li>
-          <li><a href="">My Events</a></li>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li>
+            <a href="#">
+              <i class="fas fa-house-user"></i> 
+              My Class
+              <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href="manage-class.html"><i class="fas fa-graduation-cap"></i> Manage Class</a></li>
+              <li><a href="manage-student.html"><i class="fas fa-user-graduate"></i> Manage Student</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fas fa-calendar-day"></i> Event</a></li>
         </ul>
         <div class="search-nav">
           <form class="navbar-form" action="">
@@ -79,8 +89,8 @@
           <ul class="breadcrumb">
             <li><a href="">Home</a></li>
             <li><a href="">My Classes</a></li>
-            <li><a href="">Class 1</a></li>
-            <li>Content Overview</li>
+            <li><a href="">BHAF-1911-2.2</a></li>
+            <li>Asm 1 - Topic 1</li>
           </ul>
         </div>
         <div id="main-content">
@@ -139,7 +149,9 @@
                   <td>Saturday, 23 January 2021, 11:59 PM</td>
                   <td>.pdf</td>
                   <td>
-                    <a href="view-sub-asm.html"><i class="fas fa-eye"></i> View</a>
+                    <a href="view-sub-asm.html"
+                      ><i class="fas fa-eye"></i> View</a
+                    >
                   </td>
                 </tr>
                 <tr>
@@ -148,7 +160,9 @@
                   <td>Saturday, 23 January 2021, 11:59 PM</td>
                   <td>.pdf</td>
                   <td>
-                    <a href="view-sub-asm.html"><i class="fas fa-eye"></i> View</a>
+                    <a href="view-sub-asm.html"
+                      ><i class="fas fa-eye"></i> View</a
+                    >
                   </td>
                 </tr>
                 <tr>
@@ -273,23 +287,115 @@
             </div>
             <div class="events">
               <div class="events-title">
-                <i class="fas fa-calendar-check"></i
-                ><span>Upcoming Events</span>
+                <i class="fas fa-calendar-check"></i><span>Events</span>
               </div>
               <div>
-                <div class="cal" ng-app="calApp" ng-controller="calCtrl"></div>
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <span class="glyphicon glyphicon-calendar"></span> 
+                      Calendar Events
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul class="media-list">
+                      <li class="media">
+                        <div class="media-left">
+                          <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                              <span class="panel-title strong"> Mar </span>
+                            </div>
+                            <div class="panel-body day text-danger">23</div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Assignment 1</h4>
+                          <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-left">
+                          <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                              <span class="panel-title strong"> Jan </span>
+                            </div>
+                            <div class="panel-body text-danger day">16</div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Assignment 1</h4>
+                          <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-left">
+                          <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                              <span class="panel-title strong all-caps">
+                                Dec
+                              </span>
+                            </div>
+                            <div class="panel-body text-danger day">8</div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Assignment 1</h4>
+                          <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-default btn-block"
+                      >More Events »</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="footer">
-        <div class="footer-info">
-          <div class="heading">Footer info 1</div>
+        <div class="footer-wrap">
+          <div class="footer footer-info">
+            <h1><i class="fas fa-school"></i> ABC University</h1>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            </p>
+            <p>
+              <a href="mailto:thanhbhaf18@gmail.com"
+                ><i class="fas fa-envelope-open-text"></i> Email :
+                thanhbhaf18@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:0366917178"
+                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+              >
+            </p>
+          </div>
+          <div class="footer footer-about">
+            <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
+            <div class="right">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+            <div class="left">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+          </div>
         </div>
-        <div class="footer-info">Footer info 2</div>
-        <div class="footer-info">Footer info 3</div>
-        <div class="footer-info">Footer info 4</div>
+        <div class="footer-link">
+          <a href="https://www.facebook.com/fptbtec/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
     </div>
     <div></div>
