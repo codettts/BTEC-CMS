@@ -1,246 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Btec CMS</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- link header -->
-    <title>Btec Cms</title>
-    <link rel="stylesheet" href="assets/css/upcoming-events.css" />
-    <link rel="stylesheet" href="assets/css/calendar.css" />
-    <link rel="stylesheet" href="assets/css/update-profile.css" />
-    <link rel="stylesheet" href="assets/css/upcoming-event.css" />
-    <link rel="stylesheet" href="assets/css/slideshow.css" />
-    <link rel="stylesheet" href="assets/css/search-nav.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Nunito"
-    />
-    <!-- link table -->
-    <link rel="stylesheet" href="assets/css/table.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script type="text/javascript">
-      $(document).ready(function () {
-        // Activate tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+<html lang="en">
 
-        // Select/Deselect checkboxes
-        var checkbox = $('table tbody input[type="checkbox"]');
-        $("#selectAll").click(function () {
-          if (this.checked) {
-            checkbox.each(function () {
-              this.checked = true;
-            });
-          } else {
-            checkbox.each(function () {
-              this.checked = false;
-            });
-          }
-        });
-        checkbox.click(function () {
-          if (!this.checked) {
-            $("#selectAll").prop("checked", false);
-          }
-        });
-      });
-    </script>
-    <!-- endlink table -->
-  </head>
-  <body>
-    <div id="container">
-      <div id="top">
-        <div class="header-logo">
-          <a href="index.html"
-            ><img class="img-logo" src="assets/images/logo.png" alt=""
-          /></a>
-        </div>
-        <div class="header-user">
-          <div class="notifi">
-            <i class="far fa-bell header-icon"></i><span class="badge">3</span>
-          </div>
-          <div class="drop-user">
-            <button onclick="dropdownFunc()" class="btn-drop-user">
-              <img
-                class="img-user btn-user-element"
-                src="assets/images/user-img.jpg"
-                alt=""
-              />
-              <span class="btn-user-element">Username</span>
-              <i class="fas fa-chevron-down btn-user-element"></i>
-            </button>
-            <div id="drop" class="header-sub-nav">
-              <a href="update-profile.html"
-                ><i class="fas fa-user-cog"></i> <span>Settings</span></a
-              >
-              <a href=""
-                ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Start Navigation -->
-      <div id="navigation">
-        <ul id="nav">
-          <li>
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-house-user"></i>
-              My Class
-              <i class="fas fa-angle-down"></i>
-            </a>
-            <ul class="subnav">
-              <li>
-                <a href="manage-class.html"
-                  ><i class="fas fa-graduation-cap"></i> Manage Class</a
-                >
-              </li>
-              <li>
-                <a href="manage-student.html"
-                  ><i class="fas fa-user-graduate"></i> Manage Student</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-calendar-day"></i> Event</a>
-          </li>
-        </ul>
-        <div class="search-nav">
-          <form class="navbar-form" action="">
-            <input
-              type="text"
-              placeholder="Search..."
-              name="search"
-              id="search"
-            />
-            <button type="submit" class="icon">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-      <!-- End Navigation -->
-      <div class="container-slides">
-        <div class="slider" id="main-slider">
-          <!-- outermost container element -->
-          <div class="slider-wrapper">
-            <!-- innermost wrapper element -->
-            <img
-              src="assets/images/socialbg.png"
-              alt="First"
-              class="slide"
-            />
-            <!-- slides -->
-            <img
-              src="assets/images/BLOG-technology-in-higher-education@1X.jpg"
-              alt="Second"
-              class="slide"
-            />
-          </div>
-        </div>
-      </div>
-      <div id="content-index">
-        <div class="clear"></div>
-      </div>
-      <div id="footer">
-        <div class="footer-wrap">
-          <div class="footer footer-info">
-            <h1><i class="fas fa-school"></i> ABC University</h1>
-            <p>
-              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
-              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
-            </p>
-            <p>
-              <a href="mailto:thanhbhaf18@gmail.com"
-                ><i class="fas fa-envelope-open-text"></i> Email :
-                thanhbhaf18@gmail.com</a
-              >
-            </p>
-            <p>
-              <a href="tel:0366917178"
-                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
-              >
-            </p>
-          </div>
-          <div class="footer footer-about">
-            <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
-            <div class="right">
-              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
-              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
-              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
-            </div>
-            <div class="left">
-              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
-              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
-              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="footer-link">
-          <a href="https://www.facebook.com/fptbtec/"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="logo">
+        <img class="img-logo" src="assets/images/logo.png" alt="" />
     </div>
-    <!-- Calendar JS -->
-    <script language="javascript" src="assets/js/calendar.js"></script>
-    <!-- ShowPass JS -->
-    <script>
-      function showpassFunc() {
-        var x = document.getElementById("codeInput");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
-    </script>
-    <!-- Tablink js -->
-    <script>
-      function openTab(evt, tabName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("tab-content");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(
-            " first-tab",
-            ""
-          );
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " first-tab";
-      }
-    </script>
-    <!-- Fixed Navigation -->
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
+    <div id="link">
+        <a href="">trainee</a>
+        <a href="inc/trainer/trainer-index.html">trainer</a>
+        <a href="">staff</a>
+        <a href="">admin</a>
+    </div>
+    <!-- form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+                <div id="first">
+                    <div class="myform form ">
+                        <div class="logo mb-3">
+                            <div class="col-md-12 text-center">
+                                <h1>Sign in</h1>
+                            </div>
+                        </div>
+                        <form action="trainer-home.html" method="post" name="login">
+                            <div class="form-group">
 
-      var header = document.getElementById("navigation");
-      var sticky = header.offsetTop;
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="form-group">
 
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-    </script>
-    <script src="assets/js/drop-user.js"></script>
-  </body>
+                                <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                            </div>
+                            <div class="col-md-12 ">
+                                <div class="login-or">
+                                    <hr class="hr-or">
+                                    <span class="span-or">or</span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <p class="text-center">
+                                    <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
+                                 </i>Google
+                                 </a>
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div id="second">
+                    <div class="myform form ">
+                        <div class="logo mb-3">
+                            <div class="col-md-12 text-center">
+                                <h1>Signup</h1>
+                            </div>
+                        </div>
+                        <form action="#" name="registration">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">First Name</label>
+                                <input type="text" name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Last Name</label>
+                                <input type="text" name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Password</label>
+                                <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                            </div>
+                            <div class="col-md-12 text-center mb-3">
+                                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+                            </div>
+                            <div class="col-md-12 ">
+                                <div class="form-group">
+                                    <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+
 </html>

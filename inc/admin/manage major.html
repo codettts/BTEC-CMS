@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- link header -->
+    <title>Btec Cms</title>
+    <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Nunito"
+    />
+    <!-- link table -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/table.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // Activate tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Select/Deselect checkboxes
+        var checkbox = $('table tbody input[type="checkbox"]');
+        $("#selectAll").click(function () {
+          if (this.checked) {
+            checkbox.each(function () {
+              this.checked = true;
+            });
+          } else {
+            checkbox.each(function () {
+              this.checked = false;
+            });
+          }
+        });
+        checkbox.click(function () {
+          if (!this.checked) {
+            $("#selectAll").prop("checked", false);
+          }
+        });
+      });
+    </script>
+    <!-- endlink table -->
+  </head>
+<body>
+<div id="containers">
+      <div id="top">
+        <div class="header-logo">
+          <img class="img-logo" src="../../assets/images/logo.png" alt="">
+        </div>
+        <div class="header-user">
+          <div class="notifi">
+            <i class="far fa-bell header-icon"></i><span class="badge">3</span>
+          </div>
+          <div class="drop-user">
+            <button onclick="dropdownFunc()" class="btn-drop-user">
+              <img class="img-user btn-user-element" src="../../assets/images/user-img.jpg" alt="">
+              <span class="btn-user-element">Username</span>
+              <i class="fas fa-chevron-down btn-user-element"></i>
+            </button>
+            <div id="drop" class="header-sub-nav">
+              <a href=""><i class="fas fa-user-cog"></i> <span>Settings</span></a>
+              <a href=""><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Navigation -->
+      <div id="navigation" class="">
+        <ul id="nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Manage account</a></li>
+          <li><a href="">Manage major</a></li>
+           <li><a href="">Manage subject</a></li>
+            <li><a href="">Manage Class</a></li>
+             <li><a href="">Manage student</a></li>
+        </ul>
+        <div class="containers-4">
+          <form class="navbar-form" action="">
+            <input type="search" placeholder="Search..." name="search" id="search">
+            <button type="submit" class="icon">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- End Navigation -->
+      <div id="content">
+        <div id="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="">Home</a></li>
+            <li>Manage Major</li>
+          </ul>
+        </div>
+        <div id="main-content">
+          <div class="right-content">
+            <div class="nav-tab">
+                <button class="btn tablink first-tab" onclick="openTab(event,'Manage-Major')">
+                Manage Major
+              </button>
+               <button class="btn tablink first-tab" onclick="openTab(event,'Crate-Major')">
+                Create Major
+              </button>
+            
+            </div>
+            <div id="Manage-Major" class="tab-content Manage-Major">
+              <div class="topic">
+                <div class="content-section">
+                  <ul class="list-content">
+                    <table class="table table-striped table-hover">
+            <thead>
+           <tr>
+                <th>ID</th>
+                <th>Name </th>
+                <th>Subject</th>
+                <th>Start day</th>
+                <th>Number of students enrolled</th>
+                <th>Number of Class</th>
+             </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Information technology</td>
+                <td>15</td>
+                <td>20/09/2020</td>
+                <td>1220</td>
+                <td>5</td>
+                <td>
+                  <a href="#editEmployeeModal" class="edit" data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Edit"
+                      >&#xE254;</i
+                    ></a
+                  >
+                  <a
+                    href="#deleteEmployeeModal"
+                    class="delete"
+                    data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Delete"
+                      >&#xE872;</i
+                    ></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Graphic design</td>
+                <td>15</td>
+                <td>20/9/2020</td>
+                <td>1020</td>
+                <td>5</td>
+                <td>
+                  <a href="#editEmployeeModal" class="edit" data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Edit"
+                      >&#xE254;</i
+                    ></a
+                  >
+                  <a
+                    href="#deleteEmployeeModal"
+                    class="delete"
+                    data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Delete"
+                      >&#xE872;</i
+                    ></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>business Administration</td>
+                <td>15</td>
+                <td>20/9/2020</td>
+                <td>1234</td>
+                <td>5</td>
+                <td>
+                  <a href="#editEmployeeModal" class="edit" data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Edit"
+                      >&#xE254;</i
+                    ></a
+                  >
+                  <a
+                    href="#deleteEmployeeModal"
+                    class="delete"
+                    data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Delete"
+                      >&#xE872;</i
+                    ></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="clearfix">
+            <div class="hint-text">
+              Showing <b>5</b> out of <b>10</b> entries
+            </div>
+            <ul class="pagination">
+              <li class="page-item disabled"><a href="#">Previous</a></li>
+              <li class="page-item active">
+                <a href="#" class="page-link">1</a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">2</a></li>
+              <li class="page-item"><a href="#" class="page-link">3</a></li>
+              <li class="page-item"><a href="#" class="page-link">4</a></li>
+              <li class="page-item"><a href="#" class="page-link">5</a></li>
+              <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+              id="Create-Major"
+              class="tab-content"
+              style="display: none"
+            >
+              <form action="">
+                <h4>Assignment Name</h4>
+                <input
+                  type="text"
+                  placeholder="Name..."
+                  required
+                  class="input-info"
+                /><br />
+                <h4>Due</h4>
+                <input
+                  type="date"
+                  class="input-info"
+                  required
+                  placeholder=""
+                /><br />
+                <h4>Submitsion Type</h4>
+                <select name="submitsion-type" id="" class="input-info">
+                  <option value=".doc">.doc</option>
+                  <option value=".pdf">.pdf</option>
+                  <option value=".zip">.zip</option>
+                </select>
+              </form>
+              <button type="submit" class="btn btn-create-asm">
+                Create Assignment
+              </button>
+            </div>
+          </div>
+      <!-- Edit Modal HTML -->
+      <!-- <div id="addEmployeeModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Employee</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <textarea class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-success" value="Add">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+      <!-- Edit Modal HTML -->
+      <div id="editEmployeeModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form>
+              <div class="modal-header">
+                <h4 class="modal-title">Edit Account</h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label>Date of Birth</label>
+                  <input type="date" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label>Grade</label>
+                  <input type="number" class="form-control" required />
+                </div>
+                <!-- <div class="form-group">
+                            <label>Address</label>
+                            <textarea class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="text" class="form-control" required>
+                        </div> -->
+              </div>
+              <div class="modal-footer">
+                <input
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                  value="Cancel"
+                />
+                <input type="submit" class="btn btn-info" value="Save" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Delete Modal HTML -->
+      <div id="deleteEmployeeModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form>
+              <div class="modal-header">
+                <h4 class="modal-title">Delete Account</h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure you want to delete these Records?</p>
+                <p class="text-warning">
+                  <small>This action cannot be undone.</small>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <input
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                  value="Cancel"
+                />
+                <input type="submit" class="btn btn-danger" value="Delete" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div id="sidebar">
+            <div id="calendar">
+              <div class="calendar-title">
+                <i class="fas fa-calendar-alt"></i><span>Calendar</span>
+              </div>
+              <div class="wrapper">
+                <div id="calendari"></div>
+              </div>
+            </div>
+            <div class="events">
+              <div class="events-title">
+                <i class="fas fa-calendar-check"></i
+                ><span>Upcoming Events</span>
+              </div>
+              <div>
+                <div class="cal" ng-app="calApp" ng-controller="calCtrl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-info">
+          <div class="heading">Hà Nội
+Tầng 2, Tòa nhà Detech II, 107 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội
+
+Điện thoại: 0981 090 513
+
+Email: btec.hn@fpt.edu.vn
+
+Hotline: 0981 090 513</div>
+        </div>
+        <div class="footer-info">Đà Nẵng
+66B Võ Văn Tần, Quận Thanh Khê, TP.Đà Nẵng (Tòa nhà Savico Building)
+
+Điện thoại: 0236 730 9268
+
+Email: btec.dn@fpt.edu.vn
+
+Hotline: 0905 888 535
+
+</div>
+        <div class="footer-info">TP. Hồ Chí Minh
+275 Nguyễn Văn Đậu - Quận Bình Thạnh - TP.Hồ Chí Minh
+
+Điện thoại: 028 7300 9268
+
+Email: btec.hcm@fpt.edu.vn
+
+Hotline: 0942 25 68 25</div>
+        <div class="footer-info">Cần Thơ
+41 Cách Mạng Tháng 8, Quận Ninh Kiều, TP. Cần Thơ.
+
+Điện thoại: 0354 583 916
+
+Email: oanhLTK25@fpt.edu.vn
+
+Hotline: 091 888 54 35</div>
+      </div>
+    </div>
+    <div></div>
+    <!-- Calendar JS -->
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <!-- ShowPass JS -->
+    <script>
+      function showpassFunc() {
+        var x = document.getElementById("codeInput");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+    <!-- Tablink js -->
+    <script>
+      function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab-content");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " first-tab",
+            ""
+          );
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " first-tab";
+      }
+    </script>
+    <!-- Fixed Navigation -->
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("navigation");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <script src="../../assets/js/drop-user.js"></script>
+  </body>
+</html>

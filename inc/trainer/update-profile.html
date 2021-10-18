@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Btec Cms</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/search-nav.css" />
-    <link rel="stylesheet" href="assets/css/upcoming-events.css" />
-    <link rel="stylesheet" href="assets/css/calendar.css" />
-    <link rel="stylesheet" href="assets/css/update-profile.css" />
-    <link rel="stylesheet" href="assets/css/upcoming-event.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
+    <link rel="stylesheet" href="../../assets/css/search-nav.css" />
+    <link rel="stylesheet" href="../../assets/css/calendar.css" />
+    <link rel="stylesheet" href="../../assets/css/content-overview.css" />
+    <link rel="stylesheet" href="../../assets/css/sidebar-nav-class.css" />
+    <link rel="stylesheet" href="../../assets/css/view-sub-asm.css" />
+    <link rel="stylesheet" href="../../assets/css/slideshow.css" />
+    <link rel="stylesheet" href="../../assets/css/table.css" />
+    <link rel="stylesheet" href="../../assets/css/update-profile.css" />
     <link
       rel="stylesheet"
-      href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+      href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
     />
     <link
       rel="stylesheet"
@@ -25,7 +29,9 @@
     <div id="containers">
       <div id="top">
         <div class="header-logo">
-          <a href="index.html"><img class="img-logo" src="assets/images/logo.png" alt="" /></a>
+          <a href="trainer-index.html"
+            ><img class="img-logo" src="../../assets/images/logo.png" alt=""
+          /></a>
         </div>
         <div class="header-user">
           <div class="notifi">
@@ -35,7 +41,7 @@
             <button onclick="dropdownFunc()" class="btn-drop-user">
               <img
                 class="img-user btn-user-element"
-                src="assets/images/user-img.jpg"
+                src="../../assets/images/user-img.jpg"
                 alt=""
               />
               <span class="btn-user-element">Username</span>
@@ -55,19 +61,31 @@
       <!-- Start Navigation -->
       <div id="navigation">
         <ul id="nav">
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li>
+            <a href="trainer-index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
           <li>
             <a href="#">
-              <i class="fas fa-house-user"></i> 
+              <i class="fas fa-house-user"></i>
               My Class
               <i class="fas fa-angle-down"></i>
             </a>
             <ul class="subnav">
-              <li><a href="manage-class.html"><i class="fas fa-graduation-cap"></i> Manage Class</a></li>
-              <li><a href="manage-student.html"><i class="fas fa-user-graduate"></i> Manage Student</a></li>
+              <li>
+                <a href="manage-class.html"
+                  ><i class="fas fa-graduation-cap"></i> Manage Class</a
+                >
+              </li>
+              <li>
+                <a href="manage-student.html"
+                  ><i class="fas fa-user-graduate"></i> Manage Student</a
+                >
+              </li>
             </ul>
           </li>
-          <li><a href="#"><i class="fas fa-calendar-day"></i> Event</a></li>
+          <li>
+            <a href="#"><i class="fas fa-calendar-day"></i> Event</a>
+          </li>
         </ul>
         <div class="search-nav">
           <form class="navbar-form" action="">
@@ -300,57 +318,15 @@
       </div>
     </div>
     <div></div>
-    <!-- Calendar JS -->
-    <script language="javascript" src="assets/js/calendar.js"></script>
-    <!-- ShowPass JS -->
-    <script>
-      function showpassFunc() {
-        var x = document.getElementById("codeInput");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
-    </script>
-    <!-- Tablink js -->
-    <script>
-      function openTab(evt, tabName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("tab-content");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(
-            " first-tab",
-            ""
-          );
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " first-tab";
-      }
-    </script>
-    <!-- Fixed Navigation -->
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      var header = document.getElementById("navigation");
-      var sticky = header.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-    </script>
-    <script src="assets/js/drop-user.js"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
-    <script src="assets/js/textarea-editor.js"></script>
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <script src="../../assets/js/drop-user.js"></script>
+    <script src="../../assets/js/fixed-nav-top.js"></script>
+    <script src="../../assets/js/login.js"></script>
+    <script src="../../assets/js/showpass.js"></script>
+    <script src="../../assets/js/sidebar-nav-class.js"></script>
+    <script src="../../assets/js/slideshow.js"></script>
+    <script src="../../assets/js/table.js"></script>
+    <script src="../../assets/js/tablink.js"></script>
+    <script src="../../assets/js/textarea-editor.js"></script>
   </body>
 </html>

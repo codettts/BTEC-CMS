@@ -14,7 +14,7 @@
 	position: absolute;
 	width: 100%;
 	opacity: 0;
-	transition: opacity 3s linear;
+	transition: opacity 5s linear;
     z-index: -1;
 }
 
