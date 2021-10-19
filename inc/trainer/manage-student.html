@@ -81,9 +81,7 @@
     <div id="container">
       <div id="top">
         <div class="header-logo">
-          <a href="trainer-index.html"
-            ><img class="img-logo" src="../../assets/images/logo.png" alt=""
-          /></a>
+          <a href="index.html"><img class="img-logo" src="assets/images/logo.png" alt="" /></a>
         </div>
         <div class="header-user">
           <div class="notifi">
@@ -93,7 +91,7 @@
             <button onclick="dropdownFunc()" class="btn-drop-user">
               <img
                 class="img-user btn-user-element"
-                src="../../assets/images/user.jpg"
+                src="assets/images/user.jpg"
                 alt=""
               />
               <span class="btn-user-element">Username</span>
@@ -113,31 +111,19 @@
       <!-- Start Main Navigation -->
       <div id="navigation">
         <ul id="nav">
-          <li>
-            <a href="trainer-index.html"><i class="fas fa-home"></i> Home</a>
-          </li>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
           <li>
             <a href="#">
-              <i class="fas fa-house-user"></i>
+              <i class="fas fa-house-user"></i> 
               My Class
               <i class="fas fa-angle-down"></i>
             </a>
             <ul class="subnav">
-              <li>
-                <a href="manage-class.html"
-                  ><i class="fas fa-graduation-cap"></i> Manage Class</a
-                >
-              </li>
-              <li>
-                <a href="manage-student.html"
-                  ><i class="fas fa-user-graduate"></i> Manage Student</a
-                >
-              </li>
+              <li><a href="manage-class.html"><i class="fas fa-graduation-cap"></i> Manage Class</a></li>
+              <li><a href="manage-student.html"><i class="fas fa-user-graduate"></i> Manage Student</a></li>
             </ul>
           </li>
-          <li>
-            <a href="#"><i class="fas fa-calendar-day"></i> Event</a>
-          </li>
+          <li><a href="#"><i class="fas fa-calendar-day"></i> Event</a></li>
         </ul>
         <div class="search-nav">
           <form class="navbar-form" action="">
@@ -185,7 +171,7 @@
                     <tr>
                       <th>ID</th>
                       <th>Name</th>
-                      <th>Date of Birth</th>
+                      <th>DOB</th>
                       <th>Email</th>
                       <th>Phone</th>
                       <th>Class</th>
@@ -527,7 +513,7 @@
               </div>
             </div>
           </div>
-          <div id="sidebar">
+          <div id="sidebars">
             <div id="sidebar-nav-class">
               <div class="events-title">
                 <i class="fas fa-graduation-cap"></i>
@@ -617,13 +603,15 @@
                           <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
                         </div>
                       </li>
+                    </ul>
+                    <ul class="media-list">
                       <li class="media">
                         <div class="media-left">
                           <div class="panel panel-danger text-center date">
                             <div class="panel-heading month">
-                              <span class="panel-title strong"> Jan </span>
+                              <span class="panel-title strong"> Mar </span>
                             </div>
-                            <div class="panel-body text-danger day">16</div>
+                            <div class="panel-body day text-danger">23</div>
                           </div>
                         </div>
                         <div class="media-body">
@@ -631,15 +619,15 @@
                           <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
                         </div>
                       </li>
+                    </ul>
+                    <ul class="media-list">
                       <li class="media">
                         <div class="media-left">
                           <div class="panel panel-danger text-center date">
                             <div class="panel-heading month">
-                              <span class="panel-title strong all-caps">
-                                Dec
-                              </span>
+                              <span class="panel-title strong"> Mar </span>
                             </div>
-                            <div class="panel-body text-danger day">8</div>
+                            <div class="panel-body day text-danger">23</div>
                           </div>
                         </div>
                         <div class="media-body">
@@ -659,14 +647,53 @@
         </div>
       </div>
     </div>
+    <script src="assets/js/sidebar-nav-class.js"></script>
+    <!-- Tablink js -->
+    <script>
+      function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab-content");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " first-tab",
+            ""
+          );
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " first-tab";
+      }
+    </script>
+    <!-- Fixed Navigation -->
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("navigation");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <script src="assets/js/drop-user.js"></script>
+
     <!-- footer -->
     <div id="footer">
       <div class="footer-wrap">
         <div class="footer footer-info">
           <h1><i class="fas fa-school"></i> ABC University</h1>
           <p>
-            <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech II
-            Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+            II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
           </p>
           <p>
             <a href="mailto:thanhbhaf18@gmail.com"
@@ -703,15 +730,5 @@
         <a href=""><i class="fab fa-twitter"></i></a>
       </div>
     </div>
-    <script language="javascript" src="../../assets/js/calendar.js"></script>
-    <script src="../../assets/js/drop-user.js"></script>
-    <script src="../../assets/js/fixed-nav-top.js"></script>
-    <script src="../../assets/js/login.js"></script>
-    <script src="../../assets/js/showpass.js"></script>
-    <script src="../../assets/js/sidebar-nav-class.js"></script>
-    <script src="../../assets/js/slideshow.js"></script>
-    <script src="../../assets/js/table.js"></script>
-    <script src="../../assets/js/tablink.js"></script>
-    <script src="../../assets/js/textarea-editor.js"></script>
   </body>
 </html>
