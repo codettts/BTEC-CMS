@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Btec CMS</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- link header -->
     <title>Btec Cms</title>
-    <link rel="stylesheet" href="assets/css/upcoming-events.css" />
+    <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
     <link
       rel="stylesheet"
-      href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+      href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
     />
     <link
       rel="stylesheet"
@@ -37,8 +37,8 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/css/table.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/table.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
     <script type="text/javascript">
       $(document).ready(function () {
         // Activate tooltip
@@ -70,7 +70,7 @@
 <div id="containers">
       <div id="top">
         <div class="header-logo">
-          <img class="img-logo" src="assets/images/logo.png" alt="">
+          <img class="img-logo" src="../../assets/images/logo.png" alt="">
         </div>
         <div class="header-user">
           <div class="notifi">
@@ -78,7 +78,7 @@
           </div>
           <div class="drop-user">
             <button onclick="dropdownFunc()" class="btn-drop-user">
-              <img class="img-user btn-user-element" src="assets/images/user-img.jpg" alt="">
+              <img class="img-user btn-user-element" src="../../assets/images/user-img.jpg" alt="">
               <span class="btn-user-element">Username</span>
               <i class="fas fa-chevron-down btn-user-element"></i>
             </button>
@@ -92,12 +92,9 @@
       <!-- Start Navigation -->
       <div id="navigation" class="">
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Manage account</a></li>
-          <li><a href="">Manage major</a></li>
-           <li><a href="">Manage subject</a></li>
-            <li><a href="">Manage Class</a></li>
-             <li><a href="">Manage student</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="manage-class.html">Manage Class</a></li>
+          <li><a href="report grade.html">Report Grade</a></li>
         </ul>
         <div class="containers-4">
           <form class="navbar-form" action="">
@@ -112,20 +109,19 @@
       <div id="content">
         <div id="breadcrumbs">
           <ul class="breadcrumb">
-            <li><a href="">Home</a></li>
-            <li>Manage Major</li>
+            <li><a href="home.html">Home</a></li>
+            <li>Reprot Grade</li>
           </ul>
         </div>
         <div id="main-content">
           <div class="right-content">
             <div class="nav-tab">
-                <button class="btn tablink first-tab" onclick="openTab(event,'Manage-Major')">
-                Manage Major
+                <button class="btn tablink first-tab" onclick="openTab(event,'report grade')">
+                Grade Of Trainee List
               </button>
-                 <a href="#addClassModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Major</span></a>
-            </div>            
+            
             </div>
-            <div id="Manage-Major" class="tab-content Manage-Major">
+            <div id="Manage-Account" class="tab-content manage-account">
               <div class="topic">
                 <div class="content-section">
                   <ul class="list-content">
@@ -133,21 +129,26 @@
             <thead>
            <tr>
                 <th>ID</th>
-                <th>Name </th>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Email</th>
+                <th>Phone</th>
                 <th>Subject</th>
-                <th>Start day</th>
-                <th>Number of students enrolled</th>
-                <th>Number of Class</th>
-             </tr>
+                <th>Class</th>
+                <th>Grade</th>
+                <th>Funtion</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
-                <td>Information technology</td>
-                <td>15</td>
-                <td>20/09/2020</td>
-                <td>1220</td>
-                <td>5</td>
+                <td>Dany Lo</td>
+                <td>15/01/1999</td>
+                <td>danybhaf188797@fpt.edu.vn</td>
+                <td>112233</td>
+                <td>Programming</td>
+                <td>BHAF-1911-2.2</td>
+                <td>P</td>
                 <td>
                   <a href="#editEmployeeModal" class="edit" data-toggle="modal"
                     ><i
@@ -172,11 +173,13 @@
               </tr>
               <tr>
                 <td>2</td>
-                <td>Graphic design</td>
-                <td>15</td>
-                <td>20/9/2020</td>
-                <td>1020</td>
-                <td>5</td>
+                <td>Nguyen Dinh Thanh</td>
+                <td>17/05/2000</td>
+                <td>thanhndbhaf188797@fpt.edu.vn</td>
+                <td>112233</td>
+                <td>Programming</td>
+                <td>BHAF-1911-2.2</td>
+                <td>P</td>
                 <td>
                   <a href="#editEmployeeModal" class="edit" data-toggle="modal"
                     ><i
@@ -201,11 +204,75 @@
               </tr>
               <tr>
                 <td>3</td>
-                <td>business Administration</td>
-                <td>15</td>
-                <td>20/9/2020</td>
-                <td>1234</td>
+                <td>Le Ngoc Minh</td>
+                <td>15/01/2001</td>
+                <td>minhlnbhaf188797@fpt.edu.vn</td>
+                <td>112233</td>
+                <td>Programming</td>
+                <td>BHAF-1911-2.2</td>
+                <td>P</td>
+                <td>
+                  <a href="#editEmployeeModal" class="edit" data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Edit"
+                      >&#xE254;</i
+                    ></a
+                  >
+                  <a
+                    href="#deleteEmployeeModal"
+                    class="delete"
+                    data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Delete"
+                      >&#xE872;</i
+                    ></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Dany Lo</td>
+                <td>15/01/1999</td>
+                <td>danybhaf188797@fpt.edu.vn</td>
+                <td>112233</td>
+                <td>Programming</td>
+                <td>BHAF-1911-2.2</td>
+                <td>P</td>
+                <td>
+                  <a href="#editEmployeeModal" class="edit" data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Edit"
+                      >&#xE254;</i
+                    ></a
+                  >
+                  <a
+                    href="#deleteEmployeeModal"
+                    class="delete"
+                    data-toggle="modal"
+                    ><i
+                      class="material-icons"
+                      data-toggle="tooltip"
+                      title="Delete"
+                      >&#xE872;</i
+                    ></a
+                  >
+                </td>
+              </tr>
+              <tr>
                 <td>5</td>
+                <td>Do Minh Ngoc</td>
+                <td>27/07/1998</td>
+                <td>ngocdmbhaf188797@fpt.edu.vn</td>
+                <td>112233</td>
+                <td>Programming</td>
+                <td>BHAF-1911-2.2</td>
+                <td>P</td>
                 <td>
                   <a href="#editEmployeeModal" class="edit" data-toggle="modal"
                     ><i
@@ -232,7 +299,7 @@
           </table>
           <div class="clearfix">
             <div class="hint-text">
-              Showing <b>5</b> out of <b>10</b> entries
+              Showing <b>5</b> out of <b>100</b> entries
             </div>
             <ul class="pagination">
               <li class="page-item disabled"><a href="#">Previous</a></li>
@@ -248,38 +315,8 @@
           </div>
         </div>
       </div>
-       <div id="addClassModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form>
-                    <div class="modal-header">
-                        <h4 class="modal-title">Add Major</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Name of Major</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Trainer</label>
-                        <input type="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Subject</label>
-                        <textarea class="form-control" required></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                    <input type="submit" class="btn btn-success" value="Add">
-                </div>
-                </form>
-            </div>
-        </div>
-    </div> 
       <!-- Edit Modal HTML -->
-      <!-- <div id="addEmployeeModal" class="modal fade">
+         <!-- <div id="addEmployeeModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form>
@@ -312,14 +349,15 @@
                 </form>
             </div>
         </div>
-    </div> -->
+    </div> 
+    -->
       <!-- Edit Modal HTML -->
       <div id="editEmployeeModal" class="modal fade">
         <div class="modal-dialog">
           <div class="modal-content">
             <form>
               <div class="modal-header">
-                <h4 class="modal-title">Edit Major</h4>
+                <h4 class="modal-title">Edit Grade</h4>
                 <button
                   type="button"
                   class="close"
@@ -345,15 +383,19 @@
                 <div class="form-group">
                   <label>Grade</label>
                   <input type="number" class="form-control" required />
-                </div>
-                <!-- <div class="form-group">
-                            <label>Address</label>
-                            <textarea class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
+                </div> 
+                 <div class="form-group">
                             <label>Phone</label>
                             <input type="text" class="form-control" required>
-                        </div> -->
+                        </div> 
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" class="form-control" required>
+                        </div> 
+                        <div class="form-group">
+                            <label>Class</label>
+                            <input type="text" class="form-control" required>
+                        </div> 
               </div>
               <div class="modal-footer">
                 <input
@@ -425,7 +467,7 @@
           </div>
         </div>
       </div>
-      <div id="footer">
+        <div id="footer">
         <div class="footer-info">
           <div class="heading">Hà Nội
 Tầng 2, Tòa nhà Detech II, 107 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội
@@ -466,7 +508,7 @@ Hotline: 091 888 54 35</div>
     </div>
     <div></div>
     <!-- Calendar JS -->
-    <script language="javascript" src="assets/js/calendar.js"></script>
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
     <!-- ShowPass JS -->
     <script>
       function showpassFunc() {
@@ -514,6 +556,6 @@ Hotline: 091 888 54 35</div>
         }
       }
     </script>
-    <script src="assets/js/drop-user.js"></script>
+    <script src="../../assets/js/drop-user.js"></script>
   </body>
 </html>
