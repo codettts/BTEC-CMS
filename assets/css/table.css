@@ -3,16 +3,27 @@
   box-sizing: border-box;
   padding: 20px;
   max-width: 25%;
+  margin-top: -25px;
 }
 .table-content{
-    max-width: 50%;
-    max-height: 75%;
+    width:auto;
+    overflow:auto;
+}
+table, td, th {
+  border: 1px solid rgb(250, 244, 244);
+}
+table{
+    border-collapse:collapse;
+    width:auto;
+    border: 1px solid;
+}
+th, td{
+    text-align:left;
+    padding:5px;
 }
 .table-wrapper {
     background: #fff;
-    padding: 20px 25px;
     margin: auto;
-    /* height: 100%; */
     margin-bottom: 100px ;
     border-radius: 1px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
@@ -24,49 +35,42 @@ table.table td a.edit {
 table.table td a.delete {
     color: #F44336;
 }
+/* pagination */
 .pagination {
-    float: right;
-    margin: 0 0 5px;
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-.pagination li a {
-    border: none;
-    font-size: 13px;
-    min-width: 30px;
-    min-height: 30px;
-    color: #999;
-    margin: 0 2px;
-    line-height: 30px;
-    border-radius: 1px !important;
-    text-align: center;
-    padding: 0 6px;
+.pagination a {
+  color: black;
+  float: left;
+  padding: 5px 13px;
+  text-decoration: none;
+  border: 0.2px solid rgb(247, 244, 244);
 }
 
-.pagination li a:hover {
-    color: #666;
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
 }
 
-.pagination li.active a,
-.pagination li.active a.page-link {
-    background: #03A9F4;
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-.pagination li.active a:hover {
-    background: #0397d6;
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-
-.pagination li.disabled i {
-    color: #ccc;
-}
-
-.pagination li i {
-    font-size: 16px;
-    padding-top: 6px
-}
-
 .hint-text {
     float: left;
-    margin-top: 10px;
+    margin-top: 11px;
     font-size: 13px;
 }
 
