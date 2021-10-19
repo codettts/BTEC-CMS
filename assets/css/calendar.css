@@ -58,6 +58,7 @@ th {
 #calendari table tr:first-child th {
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
   border-left: none;
   border-top: none;
 }

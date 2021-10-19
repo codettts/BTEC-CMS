@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="../../assets/css/calendar.css" />
     <link rel="stylesheet" href="../../assets/css/table.css" />
     <link rel="stylesheet" href="../../assets/css/update-profile.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link
@@ -102,14 +103,33 @@
                 ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
               >
             </div>
+            <button onclick="openNav()" class="btn-side-nav">
+              <span class="btn-user-element">Username</span>
+            </button>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <img
+                class="img-user-sidenav"
+                src="../../assets/images/user.jpg"
+                alt=""
+              />
+              <a href="update-profile.html"
+                ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+              >
+              <a href=""
+                ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+              >
+            </div>
           </div>
         </div>
       </div>
       <!-- Start Main Navigation -->
-      <div id="navigation">
+      <div id="navigation" class="topnav">
         <ul id="nav">
           <li><a href="trainer-index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li>
+          <li class="dropres" onclick="dropRes()">
             <a href="#">
               <i class="fas fa-house-user"></i>
               My Class
@@ -132,6 +152,9 @@
             <a href="#"><i class="fas fa-calendar-day"></i> Event</a>
           </li>
         </ul>
+        <a href="javascript:void(0);" class="nav-icon" onclick="dropNavRes()"
+          >&#9776;</a
+        >
         <div class="search-nav">
           <form class="navbar-form" action="">
             <input
@@ -718,5 +741,6 @@
         <a href=""><i class="fab fa-twitter"></i></a>
       </div>
     </div>
+    <script src="../../assets/js/responsive.js"></script>
   </body>
 </html>

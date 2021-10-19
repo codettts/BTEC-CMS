@@ -121,9 +121,6 @@
     margin: 0;
   }
 
-  .col-two {
-    width: 100%;
-  }
   #main-content {
     display: block;
   }
@@ -141,7 +138,56 @@
     max-width: 100%;
   }
 
+  /* Manage Class */
 
+  .col-two {
+    width: 100%;
+  }
+
+  /* Class Overview */
+
+  .tab-content {
+    min-height: 470px;
+  }
+
+  #main-content .tablink {
+    display: inline-block;
+    padding: 8px 15px;
+  }
+
+  #asm-info, .content-overview-btn {
+    width: 100%;
+  }
+
+  /* Content Overview */
+
+  .sub-asm {
+    font-size: 80%;
+  }
+  
+  .sub-asm tr > *:nth-child(5) {
+    min-width: 60px;
+  }
+
+  .sub-asm tr > *:nth-child(4) {
+    display: none;
+  }
+
+  /* View Sub Asm */
+
+  embed.sub-asm {
+    height: 500px;
+  }
+  #sub-asm-grade {
+    box-sizing: border-box;
+    padding: 8px 8px 32px;
+  }
+
+  /* Index Trainer */
+
+  .container-slides {
+    min-height: 200px;
+  }
   /* Start Footer */
 
   #footer {
