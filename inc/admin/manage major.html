@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- link header -->
     <title>Btec Cms</title>
-    <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
+    <link rel="stylesheet" href="assets/css/upcoming-events.css" />
     <link
       rel="stylesheet"
-      href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+      href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
     />
     <link
       rel="stylesheet"
@@ -37,8 +37,8 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../assets/css/table.css" />
-    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/table.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <script type="text/javascript">
       $(document).ready(function () {
         // Activate tooltip
@@ -70,7 +70,7 @@
 <div id="containers">
       <div id="top">
         <div class="header-logo">
-          <img class="img-logo" src="../../assets/images/logo.png" alt="">
+          <img class="img-logo" src="assets/images/logo.png" alt="">
         </div>
         <div class="header-user">
           <div class="notifi">
@@ -78,7 +78,7 @@
           </div>
           <div class="drop-user">
             <button onclick="dropdownFunc()" class="btn-drop-user">
-              <img class="img-user btn-user-element" src="../../assets/images/user-img.jpg" alt="">
+              <img class="img-user btn-user-element" src="assets/images/user-img.jpg" alt="">
               <span class="btn-user-element">Username</span>
               <i class="fas fa-chevron-down btn-user-element"></i>
             </button>
@@ -122,10 +122,8 @@
                 <button class="btn tablink first-tab" onclick="openTab(event,'Manage-Major')">
                 Manage Major
               </button>
-               <button class="btn tablink first-tab" onclick="openTab(event,'Crate-Major')">
-                Create Major
-              </button>
-            
+                 <a href="#addClassModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Major</span></a>
+            </div>            
             </div>
             <div id="Manage-Major" class="tab-content Manage-Major">
               <div class="topic">
@@ -250,38 +248,36 @@
           </div>
         </div>
       </div>
-      <div
-              id="Create-Major"
-              class="tab-content"
-              style="display: none"
-            >
-              <form action="">
-                <h4>Assignment Name</h4>
-                <input
-                  type="text"
-                  placeholder="Name..."
-                  required
-                  class="input-info"
-                /><br />
-                <h4>Due</h4>
-                <input
-                  type="date"
-                  class="input-info"
-                  required
-                  placeholder=""
-                /><br />
-                <h4>Submitsion Type</h4>
-                <select name="submitsion-type" id="" class="input-info">
-                  <option value=".doc">.doc</option>
-                  <option value=".pdf">.pdf</option>
-                  <option value=".zip">.zip</option>
-                </select>
-              </form>
-              <button type="submit" class="btn btn-create-asm">
-                Create Assignment
-              </button>
+       <div id="addClassModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Major</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name of Major</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Trainer</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <textarea class="form-control" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-success" value="Add">
+                </div>
+                </form>
             </div>
-          </div>
+        </div>
+    </div> 
       <!-- Edit Modal HTML -->
       <!-- <div id="addEmployeeModal" class="modal fade">
         <div class="modal-dialog">
@@ -323,7 +319,7 @@
           <div class="modal-content">
             <form>
               <div class="modal-header">
-                <h4 class="modal-title">Edit Account</h4>
+                <h4 class="modal-title">Edit Major</h4>
                 <button
                   type="button"
                   class="close"
@@ -470,7 +466,7 @@ Hotline: 091 888 54 35</div>
     </div>
     <div></div>
     <!-- Calendar JS -->
-    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <script language="javascript" src="assets/js/calendar.js"></script>
     <!-- ShowPass JS -->
     <script>
       function showpassFunc() {
@@ -518,6 +514,6 @@ Hotline: 091 888 54 35</div>
         }
       }
     </script>
-    <script src="../../assets/js/drop-user.js"></script>
+    <script src="assets/js/drop-user.js"></script>
   </body>
 </html>
