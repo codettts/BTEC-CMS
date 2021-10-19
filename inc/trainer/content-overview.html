@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../assets/css/slideshow.css" />
     <link rel="stylesheet" href="../../assets/css/table.css" />
     <link rel="stylesheet" href="../../assets/css/update-profile.css" />
+    <link rel="stylesheet" href="../../assets/css/edit-content.css" />
     <link
       rel="stylesheet"
       href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
@@ -105,9 +106,9 @@
       <div id="content">
         <div id="breadcrumbs">
           <ul class="breadcrumb">
-            <li><a href="">Home</a></li>
-            <li><a href="">My Classes</a></li>
-            <li><a href="">BHAF-1911-2.2</a></li>
+            <li><a href="trainer-index.html">Home</a></li>
+            <li><a href="manage-class.html">My Classes</a></li>
+            <li><a href="class-overview.html">BHAF-1911-2.2</a></li>
             <li>Asm 1 - Topic 1</li>
           </ul>
         </div>
@@ -150,8 +151,31 @@
                 </tr>
               </table>
               <div class="content-overview-btn">
-                <button class="btn btn-edit" type="button">Edit</button>
-                <button class="btn btn-2">2</button>
+                <button class="btn btn-edit" id="btn-modal" type="button">
+                  <i class="fas fa-pen"></i> Edit
+                </button>
+                <div class="overlay" id="overlay"></div>
+                <div class="modal" id="modal">
+                  <button class="modal-close-btn" id="close-btn">
+                    <i class="fa fa-times" title="Close"></i>
+                  </button>
+                  <form action="">
+                    <h4>Assignment Name</h4>
+                    <input class="input-info edit-input" value="Assignment Name"type="text" name="asm-name" id="" required />
+                    <h4>Due</h4>
+                    <input class="input-info edit-input" type="date" name="asm-due" id="" required />
+                    <h4>Submitsion Type</h4>
+                    <select class="input-info edit-input" name="submitsion-type" id="">
+                      <option value=".doc">.doc</option>
+                      <option value=".pdf">.pdf</option>
+                      <option value=".zip">.zip</option>
+                    </select><br>
+                    <button type="submit" title="Edit" class="btn-edit-asm">
+                      Edit
+                    </button>
+                  </form>
+                </div>
+                <button class="btn btn-2">Btn</button>
               </div>
               <table class="sub-asm">
                 <tr>
@@ -427,5 +451,6 @@
     <script src="../../assets/js/table.js"></script>
     <script src="../../assets/js/tablink.js"></script>
     <script src="../../assets/js/textarea-editor.js"></script>
+    <script src="../../assets/js/edit-content.js"></script>
   </body>
 </html>
