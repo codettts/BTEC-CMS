@@ -87,6 +87,6 @@
 .search-nav:focus button.icon {
   outline: none;
   opacity: 1;
-  margin-left: -60px;
+  margin-left: -50px;
   cursor: pointer;
 }
