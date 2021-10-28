@@ -35,6 +35,18 @@ table.table td a.edit {
 table.table td a.delete {
     color: #F44336;
 }
+.btn-export {
+  border: 0.2px solid rgb(247, 244, 244);
+  background-color: #71e275;
+  float: left;
+  padding: 5px 13px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.btn-export:hover{
+    background-color: #f44336;
+    color: rgb(240, 154, 154);
+}
 /* pagination */
 .pagination {
   display: inline-block;
