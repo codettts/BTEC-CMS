@@ -147,7 +147,12 @@
               </li>
               <li>
                 <a href="manage-student.html"
-                  ><i class="fas fa-user-graduate"></i> Manage Student</a
+                  ><i class="fas fa-user-graduate"></i>  Manage Student</a
+                >
+              </li>
+              <li>
+                <a href="export-grade.html"
+                  ><i class="fas fa-user-graduate"></i>  List Grade</a
                 >
               </li>
             </ul>
@@ -182,7 +187,7 @@
             <li><a href="">Home</a></li>
             <li><a href="manage-class.html">My Classes</a></li>
             <li><a href="manage-class.html">Class 1</a></li>
-            <li>Manage Trainee</li>
+            <li>Manage Grade</li>
           </ul>
         </div>
         <div id="main-content">
@@ -191,7 +196,7 @@
               <div class="table-title">
                 <div class="row">
                   <div class="col-sm-6">
-                    <h2 style="margin-bottom: 5px">Trainee List</h2>
+                    <h2 style="margin-bottom: 5px">Grade List</h2>
                   </div>
                 </div>
               </div>
@@ -203,11 +208,12 @@
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>Name</th>
-                      <th>DOB</th>
-                      <th>Email</th>
+                      <th>Student Name</th>
+                      <th>Subject code</th>
+                      <th>Number of credits</th>
                       <th>Class</th>
                       <th>Subject</th>
+                      <th>Semester</th>
                       <th>Grade</th>
                       <th>Status</th>
                       <th>Total lesson</th>
@@ -217,10 +223,11 @@
                     <tr>
                       <td>1</td>
                       <td>Dany Lo</td>
-                      <td>15/01/1999</td>
-                      <td>danybhaf188797@fpt.edu.vn</td>
+                      <td>T/615/1690</td>
+                      <td>15</td>
                       <td>BHAF-1911-2.2</td>
                       <td>Programming</td>
+                      <td>Spring 2020</td>
                       <td>8.0</td>
                       <td style="color: green">Passed</td>
                       <td>30/30</td>
@@ -228,10 +235,11 @@
                     <tr>
                       <td>2</td>
                       <td>Nguyen Dinh Thanh</td>
-                      <td>17/05/2000</td>
-                      <td>thanhndbhaf188797@fpt.edu.vn</td>
+                      <td>T/615/1690</td>
+                      <td>15</td>
                       <td>BHAF-1911-2.2</td>
                       <td>Programming</td>
+                      <td>Spring 2020</td>
                       <td>8.0</td>
                       <td style="color: green">Passed</td>
                       <td>30/30</td>
@@ -239,10 +247,11 @@
                     <tr>
                       <td>3</td>
                       <td>Le Ngoc Minh</td>
-                      <td>15/01/2001</td>
-                      <td>minhlnbhaf188797@fpt.edu.vn</td>
+                      <td>T/615/1690</td>
+                      <td>15</td>
                       <td>BHAF-1911-2.2</td>
                       <td>Programming</td>
+                      <td>Spring 2020</td>
                       <td>6.0</td>
                       <td style="color: green">Passed</td>
                       <td>30/30</td>
@@ -250,10 +259,11 @@
                     <tr>
                       <td>4</td>
                       <td>Dany Lo</td>
-                      <td>15/01/1999</td>
-                      <td>danybhaf188797@fpt.edu.vn</td>
+                      <td>T/615/1690</td>
+                      <td>15</td>
                       <td>BHAF-1911-2.2</td>
                       <td>Programming</td>
+                      <td>Spring 2020</td>
                       <td>8.0</td>
                       <td style="color: green">Passed</td>
                       <td>30/30</td>
@@ -261,10 +271,11 @@
                     <tr>
                       <td>5</td>
                       <td>Do Minh Ngoc</td>
-                      <td>27/07/1998</td>
-                      <td>ngocdmbhaf188797@fpt.edu.vn</td>
+                      <td>T/615/1690</td>
+                      <td>15</td>
                       <td>BHAF-1911-2.2</td>
                       <td>Programming</td>
+                      <td>Spring 2020</td>
                       <td>6.0</td>
                       <td style="color: green">Passed</td>
                       <td>30/30</td>
@@ -433,7 +444,7 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/sidebar-nav-class.js"></script>
+    <script src="../../assets/js/sidebar-nav-class.js"></script>
     <!-- Tablink js -->
     <script>
       function openTab(evt, tabName) {
@@ -470,7 +481,7 @@
         }
       }
     </script>
-    <script src="assets/js/drop-user.js"></script>
+    <script src="../../assets/js/drop-user.js"></script>
     <!-- footer -->
     <div id="footer">
       <div class="footer-wrap">
