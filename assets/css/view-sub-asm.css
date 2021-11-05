@@ -62,7 +62,7 @@ input::-webkit-inner-spin-button {
 }
 
 #sub-asm-grade .grade-cmt {
-  min-height: 30%;
+  min-height: 50%;
   border: 2px solid grey;
   border-radius: 5px;
   box-sizing: border-box;
