@@ -1,198 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Btec Cms</title>
-    <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
-    <link rel="stylesheet" href="../../assets/css/calendar.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
-    />
-    <link rel="stylesheet" href="../../assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Nunito"
-    />
-  </head>
-  <style>
-
-    .containerr{
-      padding: 16px;
-    }
-
-    /* Full-width input fields */
-    .ip {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-    
-    /* Set a style for all buttons */
-    .btnn {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-    
-    .btnn:hover {
-      opacity: 0.8;
-    }
-    
-    /* Extra styles for the cancel button */
-    .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
-    }
-    
-    /* Center the image and position the close button */
-    .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
-      position: relative;
-    }
-    
-    img.avatar {
-      width: 40%;
-      border-radius: 50%;
-    }
-    
-    
-    span.psw {
-      float: right;
-      padding-top: 16px;
-    }
-    
-    /* The Modal (background) */
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-      padding-top: 60px;
-    }
-    
-    /* Modal Content/Box */
-    .modal-content {
-      background-color: #fefefe;
-      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-      border: 1px solid #888;
-      width: 80%; /* Could be more or less, depending on screen size */
-    }
-    
-    /* The Close Button (x) */
-    .close {
-      position: absolute;
-      right: 25px;
-      top: 0;
-      color: #000;
-      font-size: 35px;
-      font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-      color: red;
-      cursor: pointer;
-    }
-    
-    /* Add Zoom Animation */
-    .animate {
-      -webkit-animation: animatezoom 0.6s;
-      animation: animatezoom 0.6s
-    }
-    
-    @-webkit-keyframes animatezoom {
-      from {-webkit-transform: scale(0)} 
-      to {-webkit-transform: scale(1)}
-    }
-      
-    @keyframes animatezoom {
-      from {transform: scale(0)} 
-      to {transform: scale(1)}
-    }
-    
-    /* Change styles for span and cancel button on extra small screens */
-    @media screen and (max-width: 300px) {
-      span.psw {
-         display: block;
-         float: none;
-      }
-      .cancelbtn {
-         width: 100%;
-      }
-    }
-    </style>
-
-  <body>
-    <div id="containers">
-      <div id="top">
-        <div class="header-logo">
-          <img class="img-logo" src="assets/images/logo.png" alt="" />
-        </div>
-        <div class="header-user">
-          <div class="notifi">
-            <i class="far fa-bell header-icon"></i><span class="badge">3</span>
-          </div>
-          <div class="drop-user">
-            <button onclick="dropdownFunc()" class="btn-drop-user">
-              <img
-                class="img-user btn-user-element"
-                src="assets/images/user.jpg"
-                alt=""
-              />
-              <span class="btn-user-element">Username</span>
-              <i class="fas fa-chevron-down btn-user-element"></i>
-            </button>
-            <div id="drop" class="header-sub-nav">
-              <a> <i class="fas fa-user-cog"></i><span></span><button onclick="document.getElementById('id01').style.display='block'">Profile</button></a>
-              <a>
-                <i class="fas fa-sign-out-alt"></i><button>Log out</button>
-              </a>
-            </div>
-          </div>
-        </div>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Btec Cms</title>
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
+  <link rel="stylesheet" href="../../assets/css/search-nav.css" />
+  <link rel="stylesheet" href="../../assets/css/calendar.css" />
+  <link rel="stylesheet" href="../../assets/css/content-overview.css" />
+  <link rel="stylesheet" href="../../assets/css/sidebar-nav-class.css" />
+  <link rel="stylesheet" href="../../assets/css/view-sub-asm.css" />
+  <link rel="stylesheet" href="../../assets/css/slideshow.css" />
+  <link rel="stylesheet" href="../../assets/css/table.css" />
+  <link rel="stylesheet" href="../../assets/css/update-profile.css" />
+  <link rel="stylesheet" href="../../assets/css/edit-content.css" />
+  <link rel="stylesheet" href="../../assets/css/responsive.css" />
+  <link
+    rel="stylesheet"
+    href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//fonts.googleapis.com/css?family=Nunito"
+  />
+</head>
+<body>
+  <div id="container">
+    <div id="top">
+      <div class="header-logo">
+        <a href="trainer-index.html"
+          ><img class="img-logo" src="../../assets/images/logo.png" alt=""
+        /></a>
       </div>
-      <!-- Start Navigation -->
-      <div id="navigation">
-        <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li>
-            <a href="home.html"> Class </a>
-          </li>
-          <li><a href="#">Event</a></li>
-        </ul>
-        <div class="containers-4">
-          <form class="navbar-form" action="">
-            <input
-              type="search"
-              placeholder="Search..."
-              name="search"
-              id="search"
+      <div class="header-user">
+        <div class="notifi">
+          <i class="far fa-bell header-icon"></i><span class="badge">3</span>
+        </div>
+        <div class="drop-user">
+          <button onclick="dropdownFunc()" class="btn-drop-user">
+            <img
+              class="img-user btn-user-element"
+              src="../../assets/images/user.jpg"
+              alt=""
             />
-            <button type="submit" class="icon">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
+            <span class="btn-user-element">Username</span>
+            <i class="fas fa-chevron-down btn-user-element"></i>
+          </button>
+          <div id="drop" class="header-sub-nav">
+            <a href="update-profile.html"
+              ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+            >
+            <a href=""
+              ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+            >
+          </div>
+          <button onclick="openNav()" class="btn-side-nav">
+            <span class="btn-user-element">Username</span>
+          </button>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <img
+              class="img-user-sidenav"
+              src="../../assets/images/user.jpg"
+              alt=""
+            />
+            <a href="update-profile.html"
+              ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+            >
+            <a href=""
+              ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+            >
+          </div>
         </div>
       </div>
+    </div>
+    <!-- Start Navigation -->
+    <div id="navigation" class="topnav">
+      <ul id="nav">
+        <li>
+          <a href="home.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="class-detail.html"><i class="fas fa-graduation-cap"></i>My Classes</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0);" class="nav-icon" onclick="dropNavRes()"
+        >&#9776;</a
+      >
+      <div class="search-nav">
+        <form class="navbar-form" action="">
+          <input
+            type="search"
+            placeholder="Search..."
+            name="search"
+            id="search"
+          />
+          <button type="submit" class="icon">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
       <!-- End Navigation -->
       <div id="content">
         <div id="breadcrumbs">
@@ -216,7 +128,7 @@
                 <div class="content-section">
                   <ul class="list-content">
                     <li>
-                      BH-AF-1911-2.2
+                      BH-AF-1911-2.2 DSA<span style="margin-left: 30px;color:rgb(43, 183, 226);">Passed</span>
                       <a href="class-detail.html" class="new">View</a>
                     </li>
                   </ul>
@@ -226,7 +138,7 @@
                 <div class="content-section">
                   <ul class="list-content">
                     <li>
-                      BH-AF-1911-2.2
+                      BH-AF-1911-2.2 CCP<span style="margin-left: 30px;color:rgb(4, 168, 218);">Passed</span>
                       <a href="class-detail.html" class="new">View</a>
                     </li>
                   </ul>
@@ -236,7 +148,7 @@
                 <div class="content-section">
                   <ul class="list-content">
                     <li>
-                      BH-AF-1911-2.2
+                      BH-AF-1911-2.2 PRM <span style="margin-left: 30px;color:rgb(226, 43, 150);">Failed</span>
                       <a href="class-detail.html" class="new">View</a>
                     </li>
                   </ul>
@@ -246,7 +158,7 @@
                 <div class="content-section">
                   <ul class="list-content">
                     <li>
-                      BH-AF-1911-2.2
+                      BH-AF-1911-2.2 WD<span style="margin-left: 30px;color:rgb(150, 114, 207);">In Process</span>
                       <a href="class-detail.html" class="new">View</a>
                     </li>
                   </ul>
@@ -299,13 +211,61 @@
         </form>
       </div>
       <div id="footer">
-        <div class="footer-info">
-          <div class="heading">Footer info 1</div>
+        <div class="footer-wrap">
+          <div class="footer footer-info">
+            <h1><i class="fas fa-school"></i> ABC University</h1>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            </p>
+            <p>
+              <a href="mailto:thanhbhaf18@gmail.com"
+                ><i class="fas fa-envelope-open-text"></i> Email :
+                thanhbhaf18@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:0366917178"
+                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+              >
+            </p>
+          </div>
+          <div class="footer footer-about">
+            <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
+            <div class="right">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+            <div class="left">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+          </div>
         </div>
-        <div class="footer-info">Footer info 2</div>
-        <div class="footer-info">Footer info 3</div>
-        <div class="footer-info">Footer info 4</div>
+        <div class="footer-link">
+          <a href="https://www.facebook.com/fptbtec/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
+    </div>
+    <div></div>
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <script src="../../assets/js/drop-user.js"></script>
+    <script src="../../assets/js/fixed-nav-top.js"></script>
+    <script src="../../assets/js/login.js"></script>
+    <script src="../../assets/js/showpass.js"></script>
+    <script src="../../assets/js/sidebar-nav-class.js"></script>
+    <script src="../../assets/js/slideshow.js"></script>
+    <script src="../../assets/js/table.js"></script>
+    <script src="../../assets/js/tablink.js"></script>
+    <script src="../../assets/js/textarea-editor.js"></script>
+    <script src="../../assets/js/responsive.js"></script>
     </div>
     <div></div>
     <!-- Calendar JS -->
