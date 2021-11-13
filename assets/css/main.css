@@ -544,6 +544,16 @@ ul.breadcrumb li a:hover {
 
 /* End tablink content */
 
+#pagination-box {
+  box-sizing: border-box  !important;
+}
+
+#pagination-box .pagination {
+  float: none  !important;
+  display: flex  !important;
+  justify-content: center !important;
+}
+
 #sidebar {
   box-sizing: border-box;
   padding: 10px;
